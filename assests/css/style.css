@@ -1,0 +1,210 @@
+.loadDelay{
+    opacity: 0;
+    animation: animate_opacity 1s forwards;
+    animation-delay: 3s;
+}
+
+.opacityOverlay{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.skillResize{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+
+/* About Section */
+
+#aboutWrapper{
+    background-image: url(../images/glacier.jpg);
+    /* position: relative; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200%;
+    width: 100%;
+    animation: anim_bg 1.5s forwards;
+}
+
+/* #aboutWrapperAnimation::before{
+    opacity: 0;
+} */
+
+#aboutWrapperAnimation{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    /* animation: animate_opacity 1s forwards; */
+    /* animation-delay: 1s; */
+}
+
+#aboutWrapper::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* animation: anim_bg 1s forwards;  */
+    animation-delay: 1.5s;
+    z-index: -2;
+}
+
+#aboutTitle{
+    color: white;
+    font-family: 'Unica One', cursive;
+    opacity: 0;
+    position: relative;
+    font-size: 50px;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    animation: animate_opacity 1s forwards;
+    animation-delay: 2.5s;
+}
+
+#aboutTitle::before {
+    position: absolute;
+    width: 100%;
+}
+
+#profilePic{
+    margin: auto;
+    width: 215px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 7px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.aboutText{
+    z-index: 3;
+    font-family: 'Unica One', cursive;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 100px;
+    overflow: auto;
+    opacity: 0;
+    animation: animate_opacity 1s forwards;
+    animation-delay: 2.5s;
+    margin-bottom: 200px;
+}
+
+
+/* Projects Section */
+
+#projectsWrapper{
+    background-image: url(../images/ak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#projectsHeader{
+    background-color:white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#carouselExampleIndicators{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* Skills Section */
+
+#skillsWrapper{
+    background-image: url(../images/borah.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 5% 90% 5%;
+}
+
+#skillsHeader{
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#skillsBody{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 5% 90% 5%;
+}
+
+#variousSkills{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    grid-area: 1/2/1/2;
+}
+
+#cssSkills{
+    color: white;
+    grid-area: 2/2/2/2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#jsSkills{
+    color: white;
+    grid-area: 3/2/3/2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Contact Section */
+
+#contactWrapper{
+    background-image: url(../images/or.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contactHeader{
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* Animations */
+
+@keyframes anim_bg {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+@keyframes animate_opacity{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="./assests/css/reset.css" />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Unica+One"
+    rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Hamburger Menu -->
+      <!-- <input id="toggle" type="checkbox">
+        <label for="toggle" class="toggle-container">
+            <span class="button button-toggle"></span>
+        </label>
+
+        <nav class="nav">
+            <a class="nav-item" href="">About</a>
+            <a class="nav-item" href="">Projects</a>
+            <a class="nav-item" href="">Skills</a>
+            <a class="nav-item" href="">Contact</a>
+            <a class="nav-item" href="">Resume</a>
+        </nav> -->
+
+    <!-- About Section -->
+      <div id="aboutWrapper">
+          <div id="aboutWrapperAnimation">
+
+              <div id="aboutTitle">
+                  <h2>About Me</h2>
+                  <img
+            id="profilePic"
+            src="./assests/images/profile-pic.jpg"
+            alt="profile picture"/>
+        </div>
+        <div class="aboutText">
+            <p>
+            My name is Jacob, I specialize in front-end web development and enjoy working with CSS to create well-organized and immersive websites. Growing up in rural Wisconsin I spent much of my time online or exploring the woods. By the time I was a Freshman in High School I created my school's website and at the end of the year was presented with a "WebMaster" award. I went on to create small websites for family members and continued learning about website design and networking when I moved to Colorado the following year. This move allowed me to follow my passion for exploration which eventually led me to get a Geology degree at the University of Wisconsin.
+        </p>
+        <br/>
+        <p>
+            Having spent countless hours over a microscope during Geology I am very detail oriented. I enjoy applying that attention to detail when creating websites. Having presented research findings to a wide variety of audiences I am good at explaining complex ideas to people unfamiliar with the subject. I hope to bring my attention to detail, excellent customer service experience, and hard work ethic to your company.
+        </p>
+    </div>
+</div>
+</div>
+
+
+<!-- Project Section -->
+<div class="loadDelay" id="projectsWrapper">
+    <div class="opacityOverlay">
+        
+        
+        <div id="projectsHeader">
+                      <h2>Projects</h2>
+                </div>
+                <div id="projectsBody">
+
+         <!-- Carousel -->
+    
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img id="imgSize" class="d-block w-100" src="./assests/images/trivia.JPG" alt="First slide">
+                    <div class="carousel-caption">
+                        <h4>test</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate ad minus debitis sint rem eius dicta totam, nesciunt eligendi perferendis voluptates recusandae? Natus rerum consequuntur, aut commodi sit quo!</p>
+                    </div>
+                </div>
+                  <div class="carousel-item">
+                      <img id="imgSize" class="d-block w-100" src="./assests/images/train.JPG" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assests/images/rpg.JPG" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assests/images/everythingSports.JPG" alt="Fourth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+        <!-- Skills Section -->
+        <div id="skillsWrapper" class="loadDelay">
+            <div class="opacityOverlay">
+
+                <div id="skillsHeader">
+                    <h1>Skills</h1>
+                </div>
+                <div id="skillsBody">
+                    <div id="variousSkills">
+                        <h2>Various</h2>
+                        <img class="skillResize" src="./assests/images/skills/html.png" alt="HTML">
+                    </div>
+
+                    <div id="cssSkills">
+                        <h2>CSS</h2>
+                        <img class="skillResize" src="./assests/images/skills/css3.png" alt="CSS3">
+                        <img class="skillResize" src="./assests/images/skills/cssgrid.png" alt="CSS Grid">
+                        <img class="skillResize" src="./assests/images/skills/bootstrap.png" alt="Bootstrap">
+                    </div>
+
+                    <div id="jsSkills">
+                        <h2>JavaScript</h2>
+                        <img class="skillResize" src="./assests/images/skills/javascript.png" alt="JavaScript">
+                        <img class="skillResize" src="./assests/images/skills/jquery.png" alt="jQuery">
+                        <img class="skillResize" src="./assests/images/skills/nodejs.png" alt="Node.js">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contactWrapper">
+            <div class="opacityOverlay">
+                <div id="contactHeader">
+                    <h1>Contact</h1>
+                </div>
+                <div id="contactBody">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis excepturi, expedita blanditiis laborum consequuntur, sunt veritatis est reprehenderit corrupti ad aut quaerat quos vel enim totam esse velit quam perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, provident iure veniam error porro pariatur atque ea reprehenderit sunt sequi laudantium iste iusto suscipit eaque earum odit molestias hic ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, dicta voluptatem? Exercitationem aut rerum ea sapiente distinctio minima deleniti enim, assumenda illo temporibus! Enim eaque fugit quod explicabo doloribus officia!</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        <!-- JavaScript -->
+    <script
+      src="./assests/javascript/javascript.js"
+      type="text/javascript"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="./assests/javascript/bootstrap.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

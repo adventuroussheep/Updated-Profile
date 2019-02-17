@@ -10,13 +10,25 @@
     <link rel="stylesheet" href="./assests/css/reset.css" />
     <!-- Google Fonts -->
     <link
-    href="https://fonts.googleapis.com/css?family=Unica+One"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
     />
     <!-- Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./assests/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -40,129 +52,287 @@
             <a class="nav-item" href="">Resume</a>
         </nav> -->
 
-    <!-- About Section -->
+      <!-- About Section -->
       <div id="aboutWrapper">
-          <div id="aboutWrapperAnimation">
-
-              <div id="aboutTitle">
-                  <h2>About Me</h2>
-                  <img
-            id="profilePic"
-            src="./assests/images/profile-pic.jpg"
-            alt="profile picture"/>
-        </div>
-        <div class="aboutText">
+        <div id="aboutWrapperAnimation">
+          <div id="aboutTitle">
+            <br>
+            <h2>About Me</h2>
+            <img
+              id="profilePic"
+              src="./assests/images/profile-pic.jpg"
+              alt="profile picture"
+            />
+          </div>
+          <div class="aboutText">
             <p>
-            My name is Jacob, I specialize in front-end web development and enjoy working with CSS to create well-organized and immersive websites. Growing up in rural Wisconsin I spent much of my time online or exploring the woods. By the time I was a Freshman in High School I created my school's website and at the end of the year was presented with a "WebMaster" award. I went on to create small websites for family members and continued learning about website design and networking when I moved to Colorado the following year. This move allowed me to follow my passion for exploration which eventually led me to get a Geology degree at the University of Wisconsin.
-        </p>
-        <br/>
-        <p>
-            Having spent countless hours over a microscope during Geology I am very detail oriented. I enjoy applying that attention to detail when creating websites. Having presented research findings to a wide variety of audiences I am good at explaining complex ideas to people unfamiliar with the subject. I hope to bring my attention to detail, excellent customer service experience, and hard work ethic to your company.
-        </p>
-    </div>
-</div>
-</div>
+              My name is Jacob, I specialize in front-end web development and
+              enjoy working with CSS to create well-organized and immersive
+              websites. Growing up in rural Wisconsin I spent much of my time
+              online or exploring the woods. By the time I was a Freshman in
+              High School I created my school's website and at the end of the
+              year was presented with a "WebMaster" award. I went on to create
+              small websites for family members and continued learning about
+              website design and networking when I moved to Colorado the
+              following year. This move allowed me to follow my passion for
+              exploration which eventually led me to get a Geology degree at the
+              University of Wisconsin.
+            </p>
+            <br />
+            <p>
+              Having spent countless hours over a microscope during Geology I am
+              very detail oriented. I enjoy applying that attention to detail
+              when creating websites. Having presented research findings to a
+              wide variety of audiences I am good at explaining complex ideas to
+              people unfamiliar with the subject. I hope to bring my attention
+              to detail, excellent customer service experience, and hard work
+              ethic to your company.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Project Section -->
+      <div class="loadDelay" id="projectsWrapper">
+        <div class="opacityOverlay">
+          <div id="projectsHeader">
+            <h2>Projects</h2>
+          </div>
+          <div id="projectsBody">
+            <!-- Carousel -->
 
-<!-- Project Section -->
-<div class="loadDelay" id="projectsWrapper">
-    <div class="opacityOverlay">
-        
-        
-        <div id="projectsHeader">
-                      <h2>Projects</h2>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="./assests/images/rpg.JPG"
+                    alt="First slide"
+                  />
+                  <div class="carousel-caption carouselText">
+                    <h4>RPG Game</h4>
+                    <p>
+                      Test your might against 3 other combatants and become a
+                      true Highlander! This project uses CSS Grid, JavaScript,
+                      and jQuery with a handful of sound effects.
+                    </p>
+                    <button onclick="window.location.href = 'https://adventuroussheep.github.io/RPG-Game/'">Deployed page</button>
+                  <br>
+                  <button onclick="window.location.href = 'https://github.com/adventuroussheep/RPG-Game'">GitHub Page</button>
+                  </div>
                 </div>
-                <div id="projectsBody">
 
-         <!-- Carousel -->
-    
-         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img id="imgSize" class="d-block w-100" src="./assests/images/trivia.JPG" alt="First slide">
-                    <div class="carousel-caption">
-                        <h4>test</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate ad minus debitis sint rem eius dicta totam, nesciunt eligendi perferendis voluptates recusandae? Natus rerum consequuntur, aut commodi sit quo!</p>
-                    </div>
+              <div class="carousel-item">
+                <img
+                  id="imgSize"
+                  class="d-block w-100"
+                  src="./assests/images/trivia.JPG"
+                  alt="Second slide"
+                />
+                <div class="carousel-caption carouselText">
+                  <h4>Trivia Game</h4>
+                  <p>
+                    Test your Disney knowledge but do it quick as you only have
+                    15 seconds per question! This project was created with CSS
+                    Grid, JavaScript, and jQuery.
+                  </p>
+                  <button onclick="window.location.href = 'https://adventuroussheep.github.io/TriviaGame/'">Deployed page</button>
+                  <br>
+                  <button onclick="window.location.href = 'https://github.com/adventuroussheep/TriviaGame'">GitHub Page</button>
                 </div>
-                  <div class="carousel-item">
-                      <img id="imgSize" class="d-block w-100" src="./assests/images/train.JPG" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./assests/images/rpg.JPG" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./assests/images/everythingSports.JPG" alt="Fourth slide">
-                    </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  id="imgSize"
+                  class="d-block w-100"
+                  src="./assests/images/train.JPG"
+                  alt="Third slide"
+                />
+                <div class="carousel-caption carouselText">
+                  <h4>Train Scheduler</h4>
+                  <p>
+                    Never miss your next train again! This project uses
+                    Bootstrap, JavaScript, jQuery, AJAX, and Firebase.
+                  </p>
+                  <button onclick="window.location.href = 'https://adventuroussheep.github.io/TrainSchedule/'">Deployed page</button>
+                  <br>
+                  <button onclick="window.location.href = 'https://github.com/adventuroussheep/TrainSchedule'">GitHub Page</button>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./assests/images/everythingSports.JPG"
+                  alt="Fourth slide"
+                />
+                <div class="carousel-caption carouselText">
+                  <h4>Sports Feed</h4>
+                  <p>
+                    Get the latest sports news from multiple sources and never
+                    miss out on a game! I was in charge of API calls and backend
+                    development in the group project.
+                  </p>
+                  <button onclick="window.location.href = 'https://jluzadasjr.github.io/Group-Project/'">Deployed page</button>
+                  <br>
+                  <button onclick="window.location.href = 'https://github.com/jluzadasjr/Group-Project'">GitHub Page</button>
+                </div>
+              </div>
+              </div>
+
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div id="skillsWrapper" class="loadDelay">
+        <div class="opacityOverlay">
+          <div id="skillsHeader">
+            <h1>Skills</h1>
+          </div>
+          <div id="skillsBody">
+            <div id="variousSkills">
+              <br><br>
+              <h2>Various</h2>
+              <img
+                class="skillResize"
+                src="./assests/images/skills/html.png"
+                alt="HTML"
+              />
+            </div>
+
+            <div id="cssSkills">
+                <br><br>
+              <h2>CSS</h2>
+              <img
+                class="skillResize"
+                src="./assests/images/skills/css3.png"
+                alt="CSS3"
+              />
+              <img
+                class="skillResize"
+                src="./assests/images/skills/cssgrid.png"
+                alt="CSS Grid"
+              />
+              <img
+                class="skillResize"
+                src="./assests/images/skills/bootstrap.png"
+                alt="Bootstrap"
+              />
+            </div>
+
+            <div id="jsSkills">
+                <br><br>
+              <h2>JavaScript</h2>
+              <img
+                class="skillResize"
+                src="./assests/images/skills/javascript.png"
+                alt="JavaScript"
+              />
+              <img
+                class="skillResize"
+                src="./assests/images/skills/jquery.png"
+                alt="jQuery"
+              />
+              <img
+                class="skillResize"
+                src="./assests/images/skills/nodejs.png"
+                alt="Node.js"
+              />
+              <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contactWrapper">
+        <div class="opacityOverlay">
+          <div id="contactHeader">
+            <h1>Contact</h1>
+          </div>
+          <div id="contactBody">
+            <div id="contactBodyInner">
+              <h4>Jacob Haas</h4>
+              <a href="./assests/docs/testresume.pdf" download="Jacobs Resume">Resume (PDF)</a>
+              <br><br>
+
+              <div id="contactPhone">
+                      <img src="./assests/images/contact/phone.png" alt="phone" />
+              <p>715-316-2544</p>
+            </div>
+
+            <div id="contactEmail">
+                <img src="./assests/images/contact/email.png" alt="email" />
+                <p>jacob_haas@live.com</p>
             </div>
             
+            <div id="contactLinkedin">
+                <img src="./assests/images/contact/linkedin.png" alt="linkedin" />
+                <p>https://www.linkedin.com/in/jacob-haas-909b05172/</p>
+            </div>
+            
+            <div id="contactGithub">
+                <img src="./assests/images/contact/github.png" alt="github" />
+                <p>https://github.com/adventuroussheep</p>
+            </div>
         </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
-
-        <!-- Skills Section -->
-        <div id="skillsWrapper" class="loadDelay">
-            <div class="opacityOverlay">
-
-                <div id="skillsHeader">
-                    <h1>Skills</h1>
-                </div>
-                <div id="skillsBody">
-                    <div id="variousSkills">
-                        <h2>Various</h2>
-                        <img class="skillResize" src="./assests/images/skills/html.png" alt="HTML">
-                    </div>
-
-                    <div id="cssSkills">
-                        <h2>CSS</h2>
-                        <img class="skillResize" src="./assests/images/skills/css3.png" alt="CSS3">
-                        <img class="skillResize" src="./assests/images/skills/cssgrid.png" alt="CSS Grid">
-                        <img class="skillResize" src="./assests/images/skills/bootstrap.png" alt="Bootstrap">
-                    </div>
-
-                    <div id="jsSkills">
-                        <h2>JavaScript</h2>
-                        <img class="skillResize" src="./assests/images/skills/javascript.png" alt="JavaScript">
-                        <img class="skillResize" src="./assests/images/skills/jquery.png" alt="jQuery">
-                        <img class="skillResize" src="./assests/images/skills/nodejs.png" alt="Node.js">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="contactWrapper">
-            <div class="opacityOverlay">
-                <div id="contactHeader">
-                    <h1>Contact</h1>
-                </div>
-                <div id="contactBody">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis excepturi, expedita blanditiis laborum consequuntur, sunt veritatis est reprehenderit corrupti ad aut quaerat quos vel enim totam esse velit quam perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, provident iure veniam error porro pariatur atque ea reprehenderit sunt sequi laudantium iste iusto suscipit eaque earum odit molestias hic ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, dicta voluptatem? Exercitationem aut rerum ea sapiente distinctio minima deleniti enim, assumenda illo temporibus! Enim eaque fugit quod explicabo doloribus officia!</p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-                </div>
-            </div>
-        </div>
-
-
-        </div>
-
-        <!-- JavaScript -->
+    <!-- JavaScript -->
     <script
       src="./assests/javascript/javascript.js"
       type="text/javascript"

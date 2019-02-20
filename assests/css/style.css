@@ -1,3 +1,4 @@
+/* Global Classes */
 .loadDelay{
     opacity: 0;
     animation: animate_opacity 1s forwards;

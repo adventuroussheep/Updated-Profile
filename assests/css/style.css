@@ -389,7 +389,7 @@ hr {
 
 /* Media Queries */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 100px) {
 
     .carouselText{
         opacity: 1;
